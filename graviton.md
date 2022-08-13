@@ -83,18 +83,33 @@ Duration 1,000ms - 10,214,631 messages - 326,868,192 bytes, GC0 0, GC1 0, GC2 0
 ## enable full pgo
 
 ```sh
-export DOTNET_TieredPGO=1
 export DOTNET_TieredCompilation=1
+export DOTNET_TieredPGO=1
 export DOTNET_ReadyToRun=0
 export DOTNET_TC_QuickJitForLoops=1
 ```
 
 `Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput`
 
+it got worst!s
+
 ```sh
-
-
-
+Duration 1,000ms - 9,712,664 messages - 310,805,248 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,599,971 messages - 307,199,072 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,598,906 messages - 307,164,992 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,599,212 messages - 307,174,784 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,599,644 messages - 307,188,608 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,599,941 messages - 307,198,112 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,620,496 messages - 307,855,872 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,620,412 messages - 307,853,184 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,617,560 messages - 307,761,920 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,626,352 messages - 308,043,264 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,622,331 messages - 307,914,592 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,623,699 messages - 307,958,368 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,624,201 messages - 307,974,432 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,627,595 messages - 308,083,040 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,625,282 messages - 308,009,024 bytes, GC0 0, GC1 0, GC2 0
+Duration 1,000ms - 9,627,834 messages - 308,090,688 bytes, GC0 0, GC1 0, GC2 0
 ```
 
 
