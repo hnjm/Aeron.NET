@@ -1,35 +1,47 @@
+# install .net 6
+
+```sh
 wget https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh
 
 sh dotnet-install.sh
 
 sh dotnet-install.sh -c 3.1
+```
 
+# build aeron .net
+
+```sh
 cd src/
 
 dotnet build -c Release
 
 export DOTNET_ROOT=/home/ec2-user/.dotnet
+```
 
 # Install Java
 
+```sh
 curl -s "https://get.sdkman.io" | bash
 
 sdk install java 17.0.4-amzn
 
 java --add-opens java.base/sun.nio.ch=ALL-UNNAMED -cp media-driver.jar io.aeron.driver.MediaDriver
+```
 
 # Ipc Throughput
 
-Samples/Adaptive.Aeron.Samples.HelloWorld/bin/Release/net6.0/Adaptive.Aeron.Samples.HelloWorld
+`Samples/Adaptive.Aeron.Samples.HelloWorld/bin/Release/net6.0/Adaptive.Aeron.Samples.HelloWorld`
 
 
-using .net core 3.1
+## using .net core 3.1
 
+```sh
 Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput 
 
 dotnet build -c Release
+```
 
-```csharp
+```sh
 Duration 1,000ms - 10,062,930 messages - 322,013,760 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 10,063,976 messages - 322,047,232 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 10,065,513 messages - 322,096,416 bytes, GC0 0, GC1 0, GC2 0
@@ -43,12 +55,14 @@ Duration 1,000ms - 10,059,734 messages - 321,911,488 bytes, GC0 0, GC1 0, GC2 0
 
 change the <TargetFramework/> to net6.0 
 
-disable pgo
+## enable pgo
 
+```sh
 export DOTNET_TieredPGO=1
 export DOTNET_TieredCompilation=1
+```
 
-Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput
+`Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput`
 
 ```sh
 Duration 1,000ms - 10,213,919 messages - 326,845,408 bytes, GC0 0, GC1 0, GC2 0
@@ -67,7 +81,6 @@ Duration 1,000ms - 10,214,631 messages - 326,868,192 bytes, GC0 0, GC1 0, GC2 0
 ```
 
 without 
-
 
 export DOTNET_TieredPGO=0
 export DOTNET_TieredCompilation=0
