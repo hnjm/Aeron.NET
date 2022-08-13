@@ -25,7 +25,7 @@ Samples/Adaptive.Aeron.Samples.HelloWorld/bin/Release/net6.0/Adaptive.Aeron.Samp
 
 using .net core 3.1
 
-Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/netcoreapp3.1/Adaptive.Aeron.Samples.IpcThroughput 
+Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput 
 
 dotnet build -c Release
 
@@ -207,9 +207,9 @@ Histogram of RTT latencies in microseconds.
 # .NET 3.0
 
 
-Samples/Adaptive.Aeron.Samples.Pong/bin/Release/netcoreapp3.1/Adaptive.Aeron.Samples.Pong
+Samples/Adaptive.Aeron.Samples.Pong/bin/Release/net6.0/Adaptive.Aeron.Samples.Pong
 
-Samples/Adaptive.Aeron.Samples.Ping/bin/Release/netcoreapp3.1/Adaptive.Aeron.Samples.Ping
+Samples/Adaptive.Aeron.Samples.Ping/bin/Release/net6.0/Adaptive.Aeron.Samples.Ping
 
 ```sh
 Histogram of RTT latencies in microseconds.
