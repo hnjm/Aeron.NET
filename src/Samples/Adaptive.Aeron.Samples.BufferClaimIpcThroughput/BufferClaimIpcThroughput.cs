@@ -34,7 +34,7 @@ namespace Adaptive.Aeron.Samples.BufferClaimIpcThroughput
 
         public static void Main()
         {
-            ComputerSpecifications.Dump();
+            // ComputerSpecifications.Dump();
 
             var running = new AtomicBoolean(true);
             

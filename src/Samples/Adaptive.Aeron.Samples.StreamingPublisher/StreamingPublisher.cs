@@ -47,7 +47,7 @@ namespace Adaptive.Aeron.Samples.StreamingPublisher
                 throw new ArgumentException($"Message length must be at least {BitUtil.SIZE_OF_LONG:D} bytes");
             }
 
-            ComputerSpecifications.Dump();
+            // ComputerSpecifications.Dump();
 
             var context = new Aeron.Context();
             var reporter = new RateReporter(1000, PrintRate);

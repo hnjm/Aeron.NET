@@ -37,7 +37,7 @@ namespace Adaptive.Aeron.Samples.Throughput
 
         public static void Main()
         {
-            ComputerSpecifications.Dump();
+            // ComputerSpecifications.Dump();
 
 
             var reporter = new RateReporter(1000, PrintRate);
