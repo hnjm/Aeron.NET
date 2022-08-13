@@ -3,9 +3,16 @@
 ```sh
 wget https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh
 
-sh dotnet-install.sh
+chmod +x dotnet-install.sh
 
-sh dotnet-install.sh -c 3.1
+# install .net stable
+./dotnet-install.sh
+
+# install .net 3.2
+./dotnet-install.sh -c 3.1
+
+# install .net 7 preview
+./dotnet-install.sh --version 7.0.100-preview.7.22377.5
 ```
 
 # build aeron .net
@@ -15,7 +22,10 @@ cd src/
 
 dotnet build -c Release
 
-export DOTNET_ROOT=/home/ec2-user/.dotnet
+# export DOTNET_ROOT=/home/ec2-user/.dotnet
+
+echo 'export DOTNET_ROOT=$HOME/.dotnet' >> ~/.bashrc
+echo 'export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools' >> ~/.bashrc
 ```
 
 # Install Java
