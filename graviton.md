@@ -80,7 +80,25 @@ Duration 1,000ms - 10,215,818 messages - 326,906,176 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 10,214,631 messages - 326,868,192 bytes, GC0 0, GC1 0, GC2 0
 ```
 
-without PGO
+## enable full pgo
+
+```sh
+export DOTNET_TieredPGO=1
+export DOTNET_TieredCompilation=1
+export DOTNET_ReadyToRun=0
+export DOTNET_TC_QuickJitForLoops=1
+```
+
+`Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput`
+
+```sh
+
+
+
+```
+
+
+## without PGO
 
 ```sh
 export DOTNET_TieredPGO=0
