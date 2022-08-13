@@ -78,6 +78,8 @@ export DOTNET_TC_QuickJitForLoops=0
 
 `Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput`
 
+`Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net7.0/Adaptive.Aeron.Samples.IpcThroughput`
+
 ```sh
 Duration 1,000ms - 10,213,919 messages - 326,845,408 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 10,224,158 messages - 327,173,056 bytes, GC0 0, GC1 0, GC2 0
@@ -105,6 +107,7 @@ export DOTNET_TC_QuickJitForLoops=1
 
 `Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net6.0/Adaptive.Aeron.Samples.IpcThroughput`
 
+
 it got worst!s
 
 ```sh
@@ -125,6 +128,9 @@ Duration 1,000ms - 9,627,595 messages - 308,083,040 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 9,625,282 messages - 308,009,024 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 9,627,834 messages - 308,090,688 bytes, GC0 0, GC1 0, GC2 0
 ```
+
+`Samples/Adaptive.Aeron.Samples.IpcThroughput/bin/Release/net7.0/Adaptive.Aeron.Samples.IpcThroughput`
+
 
 
 ## without PGO
