@@ -80,11 +80,12 @@ Duration 1,000ms - 10,215,818 messages - 326,906,176 bytes, GC0 0, GC1 0, GC2 0
 Duration 1,000ms - 10,214,631 messages - 326,868,192 bytes, GC0 0, GC1 0, GC2 0
 ```
 
-without 
+without PGO
 
+```sh
 export DOTNET_TieredPGO=0
 export DOTNET_TieredCompilation=0
-
+```
 
 ```sh
 Duration 1,000ms - 9,471,702 messages - 303,094,464 bytes, GC0 0, GC1 0, GC2 0
@@ -101,9 +102,10 @@ Duration 1,000ms - 9,468,866 messages - 303,003,712 bytes, GC0 0, GC1 0, GC2 0
 
 ## .NET 6
 
-Samples/Adaptive.Aeron.Samples.Pong/bin/Release/net6.0/Adaptive.Aeron.Samples.Pong
 
-Samples/Adaptive.Aeron.Samples.Ping/bin/Release/net6.0/Adaptive.Aeron.Samples.Ping
+`Samples/Adaptive.Aeron.Samples.Pong/bin/Release/net6.0/Adaptive.Aeron.Samples.Pong`
+
+`Samples/Adaptive.Aeron.Samples.Ping/bin/Release/net6.0/Adaptive.Aeron.Samples.Ping`
 
 
 ```sh
@@ -220,9 +222,9 @@ Histogram of RTT latencies in microseconds.
 # .NET 3.0
 
 
-Samples/Adaptive.Aeron.Samples.Pong/bin/Release/net6.0/Adaptive.Aeron.Samples.Pong
+`Samples/Adaptive.Aeron.Samples.Pong/bin/Release/net6.0/Adaptive.Aeron.Samples.Pong`
 
-Samples/Adaptive.Aeron.Samples.Ping/bin/Release/net6.0/Adaptive.Aeron.Samples.Ping
+`Samples/Adaptive.Aeron.Samples.Ping/bin/Release/net6.0/Adaptive.Aeron.Samples.Ping`
 
 ```sh
 Histogram of RTT latencies in microseconds.
